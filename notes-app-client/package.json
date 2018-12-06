@@ -13,6 +13,8 @@
     "serverless": "^1.34.1"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "aws s3 sync build/ s3://notes-app-client-d3f2 --delete",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
