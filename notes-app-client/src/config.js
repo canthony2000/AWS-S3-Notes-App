@@ -1,7 +1,9 @@
 export default {
+  MAX_ATTACHMENT_SIZE: 5000000,
   s3: {
     REGION: "us-east-2",
     BUCKET: "canthony1"
+    // BUCKET: "notes-app-api-prod-serverlessdeploymentbucket-1dv9fgpklxjmc"
   },
   apiGateway: {
     REGION: "us-east-2",
